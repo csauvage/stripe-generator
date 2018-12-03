@@ -27,7 +27,7 @@ You need to provide your Stripe **private** key or a **[resticted key](https://s
 
 **⚠️ Warning : The program will raise an exception if you try to give an live key, this tool is intented to generate _FAKE DATASETS_**
 
-** ✅ Pro tip : You can use one config file per project as it's a common practice to have separate  Stripe accounts for separate projects  **
+**✅ Pro tip : You can use one config file per project as it's a common practice to have separate  Stripe accounts for separate projects**
 
 ## Usage
 
