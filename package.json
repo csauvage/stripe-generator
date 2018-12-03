@@ -1,0 +1,36 @@
+{
+  "name": "stripe-generator",
+  "version": "0.0.1",
+  "description": "A handful tool to create fake dataset for Stripe",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csauvage/stripe-generator.git"
+  },
+  "keywords": [
+    "payement",
+    "stripe",
+    "testing",
+    "cli"
+  ],
+  "author": "Clément SAUVAGE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csauvage/stripe-generator/issues"
+  },
+  "homepage": "https://github.com/csauvage/stripe-generator#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "chance": "^1.0.17",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "configstore": "^4.0.0",
+    "figlet": "^1.2.1",
+    "inquirer": "^6.2.1",
+    "minimist": "^1.2.0",
+    "stripe": "^6.17.0"
+  }
+}
