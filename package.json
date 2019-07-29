@@ -4,7 +4,13 @@
   "description": "A handful tool to create fake dataset for Stripe",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prebuild": "rimraf dist && mkdir dist",
+    "build": "npx babel src -d dist -s inline --copy-files",
+    "now-build": "echo \"Avoiding tedious building task\"",
+    "now": "now",
+    "start": "node ./bin/www",
+    "babel:node": "./node_modules/.bin/babel-node --presets=@babel/env",
+    "dev": "nodemon --exec npm run babel:node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +29,7 @@
   },
   "homepage": "https://github.com/csauvage/stripe-generator#readme",
   "dependencies": {
+    "cfonts": "^2.3.0",
     "chalk": "^2.4.1",
     "chance": "^1.0.17",
     "clear": "^0.1.0",
@@ -32,5 +39,19 @@
     "inquirer": "^6.2.1",
     "minimist": "^1.2.0",
     "stripe": "^6.17.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/node": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "@babel/runtime-corejs2": "^7.2.0",
+    "flow-bin": "^0.87.0",
+    "nodemon": "^1.18.7",
+    "rimraf": "^2.6.2"
   }
 }

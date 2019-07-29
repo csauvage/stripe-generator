@@ -10,9 +10,11 @@
 
 ## Installation
 
-`npm i -g stripe-generator`
+`npm i -g stripe-cli`
+
 or if you love **yarn**
-`yarn global add stripe-generator`
+
+`yarn global add stripe-cli`
 
 
 ## Setup
@@ -31,14 +33,34 @@ You need to provide your Stripe **private** key or a **[resticted key](https://s
 
 ## Usage
 
-Use 
+Start by using, you'll see all commands available and options
 ```bash
-$ stripe-generator --help
+$ stripe --help
 ``` 
-or use the shorthand 
+
+
+## Available commands
+
+Here's some of available commands and few of their options
+ 
+### Create customer
+
 ```bash
-$ stripegen --help
+$ stripe create customer[s] --nationality=fr --attach-card
 ``` 
+
+### Create charge
+
+```bash
+$ stripe create charge --customer=cus_XXXXXXX --amount=15000 --currency=EUR --token=tok_visa
+``` 
+
+### Create payout
+
+```bash
+$ stripe create payout --account=acct_XXXXXXX --amount=100000 --currency=USD
+``` 
+
 
 ## Contributing
 
