@@ -1,6 +1,6 @@
 {
-  "name": "stripe-generator",
-  "version": "0.0.1",
+  "name": "stripe-cli",
+  "version": "0.1.0",
   "description": "A handful tool to create fake dataset for Stripe",
   "main": "dist/index.js",
   "scripts": {
